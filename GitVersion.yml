@@ -2,7 +2,7 @@ mode: ContinuousDelivery
 branches:
   develop:
     regex: develop
-    mode: ContinuousDelivery
+    mode: ContinuousDeployment
     tag: alpha
 ignore:
   sha: []
