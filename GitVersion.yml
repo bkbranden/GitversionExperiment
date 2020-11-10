@@ -1,4 +1,5 @@
 mode: ContinuousDelivery
+continuous-delivery-fallback-tag: ''
 branches:
   master:
     regex: ^master$|^main$
