@@ -2,7 +2,7 @@ mode: ContinuousDelivery
 continuous-delivery-fallback-tag: ''
 branches:
   master:
-    regex: ^master$|^main$
+    regex: ^master$|^main$|production
     mode: ContinuousDelivery
     tag: ''
     increment: None
@@ -16,6 +16,14 @@ branches:
     tag: alpha
     track-merge-target: true
     increment: None
+    prevent-increment-of-merged-branch-version: true
+  hotfix:
+    increment: None
+    tag: beta
+    prevent-increment-of-merged-branch-version: true
+  release:
+    increment: None
+    tag: beta
     prevent-increment-of-merged-branch-version: true
 ignore:
   sha: []
