@@ -15,7 +15,7 @@ branches:
     tag: alpha
     track-merge-target: true
     increment: None
-    prevent-increment-of-merged-branch-version: false
+    prevent-increment-of-merged-branch-version: true
 ignore:
   sha: []
 merge-message-formats: {}
