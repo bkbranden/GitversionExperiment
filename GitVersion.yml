@@ -2,8 +2,10 @@ mode: ContinuousDelivery
 branches:
   develop:
     regex: develop
-    mode: ContinuousDeployment
+    mode: ContinuousDelivery
     tag: alpha
+    track-merge-target: true
+    increment: patch
 ignore:
   sha: []
 merge-message-formats: {}
