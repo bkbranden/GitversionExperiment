@@ -5,7 +5,7 @@ branches:
     mode: ContinuousDelivery
     tag: alpha
     track-merge-target: true
-    increment: patch
+    increment: Inherit
 ignore:
   sha: []
 merge-message-formats: {}
