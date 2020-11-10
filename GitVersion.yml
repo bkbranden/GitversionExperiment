@@ -1,11 +1,20 @@
 mode: ContinuousDelivery
 branches:
+  master:
+    regex: ^master$|^main$
+    mode: ContinuousDelivery
+    tag: ''
+    increment: None
+    prevent-increment-of-merged-branch-version: true
+    track-merge-target: false
+    tracks-release-branches: false
+    is-release-branch: false
   develop:
     regex: develop
     mode: ContinuousDelivery
     tag: alpha
     track-merge-target: true
-    increment: Inherit
+    increment: None
     prevent-increment-of-merged-branch-version: false
 ignore:
   sha: []
