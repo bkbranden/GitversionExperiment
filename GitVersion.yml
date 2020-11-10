@@ -17,10 +17,6 @@ branches:
     track-merge-target: true
     increment: None
     prevent-increment-of-merged-branch-version: true
-  hotfix:
-    increment: None
-    tag: beta
-    prevent-increment-of-merged-branch-version: true
   release:
     increment: None
     tag: beta
