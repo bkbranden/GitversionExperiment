@@ -12,7 +12,7 @@ branches:
     is-release-branch: false
   develop:
     regex: develop
-    mode: ContinuousDelivery
+    mode: ContinuousDeployment
     tag: alpha
     track-merge-target: true
     increment: None
