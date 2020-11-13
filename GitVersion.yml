@@ -10,9 +10,8 @@ branches:
     track-merge-target: false
     tracks-release-branches: false
     is-release-branch: false
-    source-branches: ['integration', 'develop', 'release']
   develop:
-    regex: develop
+    regex: develop|integration
     mode: ContinuousDeployment
     tag: alpha
     track-merge-target: true
@@ -22,23 +21,10 @@ branches:
     increment: Patch
     tag: beta
     prevent-increment-of-merged-branch-version: true
-    source-branches: ['develop', 'integration', 'master', 'support']
   release:
     increment: None
     tag: beta
     prevent-increment-of-merged-branch-version: true
-    source-branches: ['develop', 'integration', 'master', 'release', 'support']
-  feature:
-    source-branches: ['develop', 'integration', 'master', 'release', 'feature', 'support', 'hotfix']
-  integration:
-    regex: integration
-    mode: ContinuousDeployment
-    tag: alpha
-    track-merge-target: true
-    increment: None
-    prevent-increment-of-merged-branch-version: true
-    source-branches: []
-
 ignore:
   sha: []
 merge-message-formats: {}
