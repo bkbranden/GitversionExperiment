@@ -25,6 +25,13 @@ branches:
     increment: None
     tag: beta
     prevent-increment-of-merged-branch-version: true
+  integration:
+    regex: develop|integration
+    mode: ContinuousDeployment
+    tag: alpha
+    track-merge-target: true
+    increment: None
+    prevent-increment-of-merged-branch-version: true
 ignore:
   sha: []
 merge-message-formats: {}
