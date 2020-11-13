@@ -12,7 +12,7 @@ branches:
     is-release-branch: false
     source-branches: ['integration', 'develop', 'release']
   develop:
-    regex: develop|integration
+    regex: develop
     mode: ContinuousDeployment
     tag: alpha
     track-merge-target: true
@@ -30,6 +30,14 @@ branches:
     source-branches: ['develop', 'integration', 'master', 'release', 'support']
   feature:
     source-branches: ['develop', 'integration', 'master', 'release', 'feature', 'support', 'hotfix']
+  integration:
+    regex: integration
+    mode: ContinuousDeployment
+    tag: alpha
+    track-merge-target: true
+    increment: None
+    prevent-increment-of-merged-branch-version: true
+    source-branches: []
   
 ignore:
   sha: []
