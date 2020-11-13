@@ -11,7 +11,7 @@ branches:
     tracks-release-branches: false
     is-release-branch: false
   develop:
-    regex: develop
+    regex: develop|integration
     mode: ContinuousDeployment
     tag: alpha
     track-merge-target: true
